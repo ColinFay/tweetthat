@@ -4,6 +4,13 @@ tweetthat
 
 A simple wrapper to tweet straight from your R session. Opens your browser with a text ready to tweet. You need to add a text, url and via are optional.
 
+Install
+-------
+
+``` r
+devtools::install_github("ColinFay/tweetthat")
+```
+
 Example
 -------
 

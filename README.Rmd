@@ -10,13 +10,21 @@ output:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "README-", 
+  eval = FALSE
 )
 ```
 
 # tweetthat
 
-A simple wrapper to tweet straight from your R session. Opens your browser with a text ready to tweet. You need to add a text, url and via are optional.  
+A simple wrapper to tweet straight from your R session. Opens your browser with a text ready to tweet. You need to add a text, url and via are optional. 
+
+## Install 
+
+```{r}
+devtools::install_github("ColinFay/tweetthat")
+```
+
 
 ## Example
 
