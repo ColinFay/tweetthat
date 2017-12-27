@@ -13,6 +13,9 @@
 
 
 tweet_widget <- function(inputValue1, inputValue2) {
+  if (Sys.getenv("TWITTER_PAT") == "") {
+    stop("You should set a twitter token. See ?rtweet::create_token")
+  }
   ui <- miniPage(
     gadgetTitleBar("Create a new tweet"),
     miniContentPanel(
@@ -44,3 +47,4 @@ tweet_widget <- function(inputValue1, inputValue2) {
   }
   runGadget(ui, server, viewer = paneViewer())
 }
+
