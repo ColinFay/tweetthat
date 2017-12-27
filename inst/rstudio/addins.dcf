@@ -1,0 +1,4 @@
+Name: New Tweet
+Description: Create a new tweet
+Binding: tweet_widget
+Interactive: true

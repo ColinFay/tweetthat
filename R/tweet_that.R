@@ -7,7 +7,7 @@
 #' @param via optional via, with or without the `@`
 #'
 #' @importFrom glue glue
-#' @importFrom utils browseURL
+#' @importFrom utils browseURL URLencode
 #' @importFrom assertthat assert_that
 #'
 #' @return open your browser with a tweet ready to be sent
@@ -18,7 +18,7 @@
 
 tweet_that <- function(text, url = NULL, via = NULL){
   assertthat::assert_that(inherits(text, "character"), msg = "text should be a character string")
-  text <- gsub(pattern = " ", replacement = "%20", x = text)
+  text <- URLencode(text)
   text <- gsub("#", "%23", text)
   #return(text)
   if(is.null(url) & is.null(via)){

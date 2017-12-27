@@ -20,5 +20,5 @@ open your browser with a tweet ready to be sent
 Send a tweet from your R session
 }
 \examples{
-tweet_that(text = "Colin's website is cool", url = "http://colinfay.me", via = "@_colinfay")
+tweet_that(text = "Colin's website is #cool", url = "http://colinfay.me", via = "@_colinfay")
 }
