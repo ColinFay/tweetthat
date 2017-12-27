@@ -3,6 +3,7 @@
 export(tweet_that)
 export(tweet_widget)
 import(miniUI)
+import(rtweet)
 import(shiny)
 importFrom(assertthat,assert_that)
 importFrom(glue,glue)

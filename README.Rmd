@@ -40,26 +40,34 @@ Using the widget allows you to send images from your computer:
 
 ![](gifs/widget_full.png)
 
-Before using the widget, you should create a Twitter App with POST permission on apps.twitter.com. Then run : 
+Before using the widget, you should create a Twitter App with read and write permission on apps.twitter.com. Then run : 
 
 ```{r}
 ## whatever name you assigned to your created app
 appname <- "rtweet_token"
 
 ## api key (example below is not a real key)
-key <- "XYznzPFOFZR2a39FwWKN1Jp41"
+key <- "84618490-BpSmqfwIWx6ZkeFDVg6FDZ7eLUs9MRrzdBPzuc1YT"
 
 ## api secret (example below is not a real key)
-secret <- "CtkGEWmSevZqJuKl6HHrBxbCybxI1xGLqrD5ynPd9jG0SoHZbD"
+secret <- "EWXOpTjIpqM8EmHCGHd51xGQdKFeCsUfeqWk5NgPtLIRi"
 
 ## create token named "twitter_token"
-twitter_token <- create_token(
+twitter_token <- rtweet::create_token(
   app = appname,
   consumer_key = key,
   consumer_secret = secret)
 ```
 
 (taken from the rtweet vignette)
+
+You can check the .Renviron variable is set well with:
+
+```{r}
+usethis::edit_r_environ()
+```
+
+There should be a `TWITTER_PAT=` var here.
 
 ## With the function
 

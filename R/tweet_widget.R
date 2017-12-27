@@ -6,7 +6,9 @@
 #' @param in_reply_to_status_id the date of the post
 #'
 #' @import shiny
+#' @import rtweet
 #' @import miniUI
+#'
 #' @export
 
 
@@ -40,9 +42,5 @@ tweet_widget <- function(inputValue1, inputValue2) {
     })
     observeEvent(input$done, { stopApp() } )
   }
-  if ( ! file.exists(file.path(path.expand("~/"), ".rtweet_token.rds"))) {
-    warning("You should set a twitter token before using")
-  }
   runGadget(ui, server, viewer = paneViewer())
 }
-
