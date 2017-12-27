@@ -33,13 +33,13 @@ write permission on apps.twitter.com. Then run :
 
 ``` r
 ## whatever name you assigned to your created app
-appname <- "rtweet_token"
+appname <- "myapp"
 
 ## api key (example below is not a real key)
-key <- "84618490-BpSmqfwIWx6ZkeFDVg6FDZ7eLUs9MRrzdBPzuc1YT"
+key <- "84618490-BpSmqfwIWx6ZkeFDVg6FDZ7LUsMRrzdBPzuc1YT"
 
 ## api secret (example below is not a real key)
-secret <- "EWXOpTjIpqM8EmHCGHd51xGQdKFeCsUfeqWk5NgPtLIRi"
+secret <- "EWXOpTjIpqM8EmHCGHd5xGQKFeCsUfeqWk5NgPtLIRi"
 
 ## create token named "twitter_token"
 twitter_token <- rtweet::create_token(
@@ -56,7 +56,7 @@ You can check the .Renviron variable is set well with:
 usethis::edit_r_environ()
 ```
 
-There should be a `TWITTER_PAT=` var here.
+There should be a `TWITTER_PAT=` var here, with a link to a .Rds.
 
 With the function
 -----------------
