@@ -2,19 +2,10 @@
 % Please edit documentation in R/tweet_widget.R
 \name{tweet_widget}
 \alias{tweet_widget}
-\title{Create a post}
+\title{Create a tweet}
 \usage{
 tweet_widget()
 }
-\arguments{
-\item{status}{post title}
-
-\item{media}{output directory (default to _posts)}
-
-\item{token}{the output url}
-
-\item{in_reply_to_status_id}{the date of the post}
-}
 \description{
-Create a post
+Create a tweet
 }

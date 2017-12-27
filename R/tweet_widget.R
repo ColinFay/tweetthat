@@ -1,9 +1,4 @@
-#' Create a post
-#'
-#' @param status post title
-#' @param media output directory (default to _posts)
-#' @param token the output url
-#' @param in_reply_to_status_id the date of the post
+#' Create a tweet
 #'
 #' @import shiny
 #' @import rtweet
