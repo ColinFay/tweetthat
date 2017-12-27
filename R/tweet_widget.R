@@ -12,7 +12,7 @@
 #' @export
 
 
-tweet_widget <- function(inputValue1, inputValue2) {
+tweet_widget <- function() {
   if (Sys.getenv("TWITTER_PAT") == "") {
     stop("You should set a twitter token. See ?rtweet::create_token")
   }

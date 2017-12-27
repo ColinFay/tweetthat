@@ -4,7 +4,7 @@
 \alias{tweet_widget}
 \title{Create a post}
 \usage{
-tweet_widget(inputValue1, inputValue2)
+tweet_widget()
 }
 \arguments{
 \item{status}{post title}

@@ -12,4 +12,6 @@ RoxygenNote: 6.0.1.9000
 Imports: glue,
     utils,
     assertthat,
-    rtweet
+    rtweet, 
+    shiny,
+    miniUI
