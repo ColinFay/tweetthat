@@ -38,7 +38,7 @@ Using the widget allows you to send images from your computer:
 
 ![](gifs/widget_1.png)
 
-![](gifs/widget_2.png)
+![](gifs/widget_full.png)
 
 Before using the widget, you should create a Twitter App with POST permission on apps.twitter.com. Then run : 
 
